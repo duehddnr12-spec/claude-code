@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATELIER BLANC — The Essential White Tee</title>
+<meta name="description" content="220gsm 헤비웨이트 코튼으로 완성한 단 하나의 화이트 티셔츠. 개러먼트 다잉, 스몰 배치 생산. ATELIER BLANC.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f6f3ee'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' font-family='Georgia, serif' fill='%231c1a17'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- Announcement bar -->
+<div class="announce-bar">
+  <p>이번 시즌 첫 컬렉션 — 전 세계 무료 배송 &amp; 무료 교환</p>
+</div>
+
+<!-- Nav -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-left" aria-label="주요 메뉴">
+      <a href="#shop">SHOP</a>
+      <a href="#fabric">THE FABRIC</a>
+      <a href="#story">STORY</a>
+    </nav>
+
+    <a href="#top" class="logo">ATELIER&nbsp;BLANC</a>
+
+    <nav class="nav-right" aria-label="보조 메뉴">
+      <a href="#faq">FAQ</a>
+      <a href="#contact">CONTACT</a>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="장바구니">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#shop">Shop</a>
+    <a href="#fabric">The Fabric</a>
+    <a href="#story">Story</a>
+    <a href="#journal">Journal</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img src="images/hero-front.jpg" alt="ATELIER BLANC 오버사이즈 화이트 티셔츠를 착용한 모델, 정면" class="hero-img" onerror="this.classList.add('img-fallback')">
+    </div>
+    <div class="hero-content container">
+      <p class="eyebrow reveal">ATELIER BLANC — NO. 01</p>
+      <h1 class="hero-title reveal">
+        <span>화이트가 아니라,</span>
+        <span class="italic">정답이었다.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        220gsm 헤비웨이트 코튼. 계산된 박시 핏. 개러먼트 다잉으로 완성한 은은한 톤 편차.
+        소량 생산, 핸드 피니시. 더 이상 화이트 티셔츠를 고민할 필요가 없도록.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#shop" class="btn btn-dark">더 티 구매하기</a>
+        <a href="#fabric" class="btn btn-ghost">원단 살펴보기</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+      <p>SCROLL</p>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>220GSM HEAVYWEIGHT COTTON</span>
+      <span>·</span>
+      <span>GARMENT DYED</span>
+      <span>·</span>
+      <span>DOUBLE-NEEDLE HEMS</span>
+      <span>·</span>
+      <span>MADE IN SMALL BATCHES</span>
+      <span>·</span>
+      <span>FREE EXCHANGES</span>
+      <span>·</span>
+      <span>220GSM HEAVYWEIGHT COTTON</span>
+      <span>·</span>
+      <span>GARMENT DYED</span>
+      <span>·</span>
+      <span>DOUBLE-NEEDLE HEMS</span>
+      <span>·</span>
+      <span>MADE IN SMALL BATCHES</span>
+      <span>·</span>
+      <span>FREE EXCHANGES</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <section class="product" id="shop">
+    <div class="container product-grid">
+      <div class="product-gallery">
+        <div class="gallery-main">
+          <img src="images/hero-back.jpg" alt="더 에센셜 티 뒷모습" id="galleryMain" class="gallery-img" onerror="this.classList.add('img-fallback')">
+        </div>
+        <div class="gallery-thumbs">
+          <button class="thumb active" data-src="images/hero-back.jpg" aria-label="뒷모습 이미지">
+            <img src="images/hero-back.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          </button>
+          <button class="thumb" data-src="images/hero-front.jpg" aria-label="정면 이미지">
+            <img src="images/hero-front.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          </button>
+          <button class="thumb" data-src="images/fabric-detail.jpg" aria-label="원단 디테일 이미지">
+            <img src="images/fabric-detail.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          </button>
+          <button class="thumb" data-src="images/lifestyle-full.jpg" aria-label="전신 착용 이미지">
+            <img src="images/lifestyle-full.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          </button>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow reveal">THE ESSENTIAL TEE</p>
+        <h2 class="product-title reveal">더 에센셜 티</h2>
+        <p class="product-price reveal">₩168,000</p>
+        <p class="product-desc reveal">
+          한 장의 티셔츠에 필요한 모든 것. 220gsm 컴브드 코튼을 개러먼트 다잉 방식으로 염색해
+          입을수록 자연스럽게 편안해지는 톤을 완성했습니다. 드롭 숄더와 박시 핏, 리브 크루넥까지 —
+          군더더기 없이 오래 입을 수 있도록 설계했습니다.
+        </p>
+
+        <div class="option-block reveal">
+          <p class="option-label">컬러 — <span id="colorLabel">오프 화이트</span></p>
+          <div class="swatches">
+            <button class="swatch active" style="--sw:#f3efe7" data-color="오프 화이트" aria-label="오프 화이트"></button>
+            <button class="swatch" style="--sw:#e7e2d6" data-color="본" aria-label="본"></button>
+            <button class="swatch" style="--sw:#efece6" data-color="차콜 화이트" aria-label="차콜 화이트"></button>
+          </div>
+        </div>
+
+        <div class="option-block reveal">
+          <p class="option-label">사이즈</p>
+          <div class="sizes" id="sizeGroup">
+            <button class="size-btn">XS</button>
+            <button class="size-btn active">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+          <button class="size-guide-link" id="sizeGuideBtn">사이즈 가이드 보기</button>
+        </div>
+
+        <div class="qty-add reveal">
+          <div class="qty-selector">
+            <button id="qtyMinus" aria-label="수량 감소">−</button>
+            <span id="qtyValue">1</span>
+            <button id="qtyPlus" aria-label="수량 증가">+</button>
+          </div>
+          <button class="btn btn-dark btn-add" id="addToCart">장바구니에 담기</button>
+        </div>
+        <p class="add-feedback" id="addFeedback" aria-live="polite"></p>
+
+        <ul class="product-details reveal">
+          <li>100% 컴브드 코튼, 220gsm</li>
+          <li>오버사이즈 박시 핏 · 드롭 숄더</li>
+          <li>리브 크루넥 · 더블 니들 헴</li>
+          <li>개러먼트 다잉 — 톤 편차는 개체마다 다를 수 있습니다</li>
+          <li>사전 워싱 처리로 세탁 후 수축 최소화</li>
+          <li>소량 생산 · 시즌당 한정 수량</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric detail -->
+  <section class="fabric" id="fabric">
+    <div class="fabric-media">
+      <img src="images/fabric-detail.jpg" alt="원단 클로즈업, 코튼 텍스처" class="fabric-img" onerror="this.classList.add('img-fallback')">
+    </div>
+    <div class="fabric-content">
+      <p class="eyebrow reveal">THE FABRIC</p>
+      <h2 class="section-title reveal">의도를 담아 짠 원단</h2>
+      <p class="section-copy reveal">
+        대부분의 화이트 티셔츠는 160gsm 안팎의 얇은 원단을 씁니다. 저희는 다릅니다.
+        220gsm 컴브드 코튼을 선택한 이유는 단 하나 — 비쳐 보이지 않고, 처지지 않고,
+        해가 갈수록 더 좋은 질감으로 살아나는 티셔츠를 만들기 위해서입니다.
+      </p>
+      <div class="fabric-stats reveal">
+        <div>
+          <span class="stat-num">220</span>
+          <span class="stat-label">GSM 헤비웨이트</span>
+        </div>
+        <div>
+          <span class="stat-num">100%</span>
+          <span class="stat-label">컴브드 코튼</span>
+        </div>
+        <div>
+          <span class="stat-num">2x</span>
+          <span class="stat-label">더블 니들 스티치</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifestyle -->
+  <section class="lifestyle">
+    <div class="lifestyle-grid">
+      <figure class="lifestyle-item large">
+        <img src="images/lifestyle-full.jpg" alt="더 에센셜 티와 리넨 팬츠를 착용한 전신 룩" onerror="this.classList.add('img-fallback')">
+      </figure>
+      <figure class="lifestyle-item">
+        <img src="images/hero-front.jpg" alt="스튜디오에서 촬영한 화이트 티셔츠 상반신" onerror="this.classList.add('img-fallback')">
+      </figure>
+      <figure class="lifestyle-item">
+        <img src="images/hero-back.jpg" alt="화이트 티셔츠 뒷모습, 자연광" onerror="this.classList.add('img-fallback')">
+      </figure>
+    </div>
+    <div class="container lifestyle-caption">
+      <p class="eyebrow reveal">FIELD NOTES</p>
+      <h2 class="section-title reveal">입기 위해 설계했습니다</h2>
+      <p class="section-copy reveal">
+        하루 종일 입어도 신경 쓰이지 않는 무게감, 계절을 타지 않는 톤, 몇 번을 세탁해도
+        무너지지 않는 실루엣. ATELIER BLANC은 옷장의 배경이 되는 옷이 아니라,
+        가장 자주 손이 가는 옷을 만듭니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story / Philosophy -->
+  <section class="story" id="story">
+    <div class="container story-grid">
+      <div class="story-num reveal">01</div>
+      <div class="story-text">
+        <p class="eyebrow reveal">OUR STORY</p>
+        <h2 class="section-title reveal">우리가 화이트 티셔츠만 만드는 이유</h2>
+        <p class="section-copy reveal">
+          ATELIER BLANC은 하나의 질문에서 시작했습니다 — "정말 완벽한 화이트 티셔츠를
+          만든다면, 다른 옷은 필요할까?" 우리는 수십 가지 컬러와 시즌 컬렉션 대신,
+          단 하나의 제품을 반복해서 개선하는 길을 선택했습니다. 원단을 바꾸고, 패턴을
+          다시 뜨고, 봉제 방식을 수십 번 수정한 끝에 지금의 더 에센셜 티에 도달했습니다.
+        </p>
+        <div class="story-values">
+          <div class="value-item reveal">
+            <span class="value-index">01</span>
+            <div>
+              <h3>절제된 디자인</h3>
+              <p>불필요한 로고, 프린트, 장식 없이. 핏과 소재만으로 완성도를 말합니다.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <span class="value-index">02</span>
+            <div>
+              <h3>소량 생산</h3>
+              <p>시즌마다 한정된 수량만 제작해 재고 낭비 없이, 품질에만 집중합니다.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <span class="value-index">03</span>
+            <div>
+              <h3>오래 입는 옷</h3>
+              <p>유행이 아닌 시간이 지나도 좋은 옷 — 그것이 저희가 정의하는 럭셔리입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packaging -->
+  <section class="packaging">
+    <div class="container packaging-grid">
+      <div class="packaging-media reveal">
+        <img src="images/packaging-flatlay.jpg" alt="리넨 파우치와 재활용 박스로 구성된 패키징 플랫레이" onerror="this.classList.add('img-fallback')">
+      </div>
+      <div class="packaging-content">
+        <p class="eyebrow reveal">PACKAGING</p>
+        <h2 class="section-title reveal">마지막 한 땀까지, 사려 깊게</h2>
+        <p class="section-copy reveal">
+          모든 제품은 재사용 가능한 코튼 파우치에 담겨, FSC 인증 재생 종이 박스로
+          배송됩니다. 플라스틱 포장은 사용하지 않습니다. 상자를 여는 그 순간까지가
+          ATELIER BLANC 경험의 일부라고 믿습니다.
+        </p>
+        <ul class="packaging-list reveal">
+          <li>100% 리사이클 소재 배송 박스</li>
+          <li>재사용 가능한 오가닉 코튼 파우치</li>
+          <li>플라스틱 프리 패키징</li>
+          <li>탄소 중립 배송 옵션 제공</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <p class="eyebrow center reveal">WHAT THEY SAY</p>
+      <h2 class="section-title center reveal">고객들의 이야기</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial reveal">
+          <p>“이 가격이 이해되는 몇 안 되는 티셔츠. 두 번째 시즌째 계속 재구매하고 있어요.”</p>
+          <cite>— J. K., 서울</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>“두께감이 다릅니다. 비치지 않고, 세탁 후에도 핏이 그대로 유지돼요.”</p>
+          <cite>— M. S., 부산</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>“심플한 옷일수록 디테일이 중요한데, 봉제와 마감이 확실히 다른 레벨입니다.”</p>
+          <cite>— H. L., 대구</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-heading">
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="section-title reveal">자주 묻는 질문</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            핏이 어떻게 되나요?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>오버사이즈 박시 핏으로 제작되었습니다. 평소 사이즈보다 한 치수 작게 선택하시면 세미 오버핏으로, 동일 사이즈를 선택하시면 정석 오버사이즈 룩을 연출할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            세탁은 어떻게 하나요?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>찬물 손세탁 또는 울코스 세탁을 권장하며, 텀블 건조는 피해주세요. 자연 건조 시 원단의 톤과 핏이 가장 오래 유지됩니다.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            배송은 얼마나 걸리나요?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>국내는 결제 후 2~3영업일, 해외는 5~10영업일 소요됩니다. 모든 주문은 무료 배송으로 제공됩니다.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            교환·환불이 가능한가요?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>수령 후 14일 이내, 미착용 상태에 한해 무료 교환 및 환불이 가능합니다. 고객센터로 문의해 주세요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <p class="eyebrow reveal">JOIN THE LIST</p>
+      <h2 class="section-title reveal">가장 먼저 소식을 받아보세요</h2>
+      <p class="section-copy reveal">신규 컬렉션, 재입고 소식, 첫 구매 10% 할인 코드를 이메일로 보내드립니다.</p>
+      <form class="newsletter-form reveal" id="newsletterForm">
+        <input type="email" placeholder="이메일 주소를 입력하세요" required aria-label="이메일 주소">
+        <button type="submit" class="btn btn-dark">구독하기</button>
+      </form>
+      <p class="newsletter-feedback" id="newsletterFeedback" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Size guide modal -->
+<div class="modal-overlay" id="sizeModalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="사이즈 가이드">
+    <button class="modal-close" id="sizeModalClose" aria-label="닫기">×</button>
+    <h3>사이즈 가이드</h3>
+    <table class="size-table">
+      <thead>
+        <tr><th>사이즈</th><th>가슴단면 (cm)</th><th>총장 (cm)</th><th>어깨너비 (cm)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>XS</td><td>56</td><td>68</td><td>52</td></tr>
+        <tr><td>S</td><td>58</td><td>70</td><td>54</td></tr>
+        <tr><td>M</td><td>60</td><td>72</td><td>56</td></tr>
+        <tr><td>L</td><td>62</td><td>74</td><td>58</td></tr>
+        <tr><td>XL</td><td>64</td><td>76</td><td>60</td></tr>
+      </tbody>
+    </table>
+    <p class="size-note">평소 사이즈 기준이며, 오버사이즈 핏을 위해 여유 있게 재단되었습니다.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">ATELIER&nbsp;BLANC</a>
+      <p>단 하나의 화이트 티셔츠를 위한 아틀리에.</p>
+    </div>
+    <div class="footer-col">
+      <h4>SHOP</h4>
+      <a href="#shop">더 에센셜 티</a>
+      <a href="#fabric">원단 정보</a>
+      <a href="#faq">사이즈 가이드</a>
+    </div>
+    <div class="footer-col">
+      <h4>COMPANY</h4>
+      <a href="#story">브랜드 스토리</a>
+      <a href="#">저널</a>
+      <a href="#">지속가능성</a>
+    </div>
+    <div class="footer-col">
+      <h4>HELP</h4>
+      <a href="#faq">FAQ</a>
+      <a href="#">배송 &amp; 교환</a>
+      <a href="#">문의하기</a>
+    </div>
+    <div class="footer-col footer-social">
+      <h4>FOLLOW</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Newsletter</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ATELIER BLANC. All rights reserved.</p>
+    <p>Seoul, Korea</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
