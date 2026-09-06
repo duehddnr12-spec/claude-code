@@ -2,6 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- Respect reduced-motion for background videos ---------- */
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('#heroVideo, #filmVideo').forEach(v => {
+      v.removeAttribute('autoplay');
+      v.pause();
+    });
+  }
+
   /* ---------- Header scroll state ---------- */
   const header = document.getElementById('siteHeader');
   const onScroll = () => {

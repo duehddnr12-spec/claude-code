@@ -61,7 +61,9 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-media">
-      <img src="images/hero-front.jpg" alt="ATELIER BLANC 오버사이즈 화이트 티셔츠를 착용한 모델, 정면" class="hero-img" onerror="this.classList.add('img-fallback')">
+      <video class="hero-img" autoplay muted loop playsinline poster="images/hero-front.jpg" id="heroVideo">
+        <source src="images/hero-walk.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="hero-content container">
       <p class="eyebrow reveal">ATELIER BLANC — NO. 01</p>
@@ -115,20 +117,23 @@
     <div class="container product-grid">
       <div class="product-gallery">
         <div class="gallery-main">
-          <img src="images/hero-back.jpg" alt="더 에센셜 티 뒷모습" id="galleryMain" class="gallery-img" onerror="this.classList.add('img-fallback')">
+          <img src="images/product-studio.jpg" alt="더 에센셜 티 제품 단독 컷" id="galleryMain" class="gallery-img" onerror="this.classList.add('img-fallback')">
         </div>
         <div class="gallery-thumbs">
-          <button class="thumb active" data-src="images/hero-back.jpg" aria-label="뒷모습 이미지">
-            <img src="images/hero-back.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          <button class="thumb active" data-src="images/product-studio.jpg" aria-label="제품 단독 이미지">
+            <img src="images/product-studio.jpg" alt="" onerror="this.classList.add('img-fallback')">
           </button>
           <button class="thumb" data-src="images/hero-front.jpg" aria-label="정면 이미지">
             <img src="images/hero-front.jpg" alt="" onerror="this.classList.add('img-fallback')">
           </button>
-          <button class="thumb" data-src="images/fabric-detail.jpg" aria-label="원단 디테일 이미지">
-            <img src="images/fabric-detail.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          <button class="thumb" data-src="images/hero-back.jpg" aria-label="뒷모습 이미지">
+            <img src="images/hero-back.jpg" alt="" onerror="this.classList.add('img-fallback')">
           </button>
           <button class="thumb" data-src="images/lifestyle-full.jpg" aria-label="전신 착용 이미지">
             <img src="images/lifestyle-full.jpg" alt="" onerror="this.classList.add('img-fallback')">
+          </button>
+          <button class="thumb" data-src="images/fabric-detail.jpg" aria-label="원단 디테일 이미지">
+            <img src="images/fabric-detail.jpg" alt="" onerror="this.classList.add('img-fallback')">
           </button>
         </div>
       </div>
@@ -190,6 +195,9 @@
   <section class="fabric" id="fabric">
     <div class="fabric-media">
       <img src="images/fabric-detail.jpg" alt="원단 클로즈업, 코튼 텍스처" class="fabric-img" onerror="this.classList.add('img-fallback')">
+      <div class="fabric-inset">
+        <img src="images/stitch-detail.jpg" alt="암홀과 소매 봉제 디테일 클로즈업" onerror="this.classList.add('img-fallback')">
+      </div>
     </div>
     <div class="fabric-content">
       <p class="eyebrow reveal">THE FABRIC</p>
@@ -237,6 +245,18 @@
         무너지지 않는 실루엣. ATELIER BLANC은 옷장의 배경이 되는 옷이 아니라,
         가장 자주 손이 가는 옷을 만듭니다.
       </p>
+    </div>
+  </section>
+
+  <!-- Campaign film -->
+  <section class="film">
+    <video class="film-video" autoplay muted loop playsinline poster="images/lifestyle-full.jpg" id="filmVideo">
+      <source src="images/lifestyle-standing.mp4" type="video/mp4">
+    </video>
+    <div class="film-overlay"></div>
+    <div class="container film-caption">
+      <p class="eyebrow reveal">CAMPAIGN FILM</p>
+      <h2 class="section-title reveal">가만히 서 있어도, 완성되는 핏</h2>
     </div>
   </section>
 
