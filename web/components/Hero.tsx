@@ -1,4 +1,4 @@
-import Product3D from "./Product3D";
+import ProductShowcase from "./ProductShowcase";
 
 export default function Hero() {
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <Product3D />
+        <ProductShowcase />
       </div>
     </section>
   );
