@@ -42,6 +42,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
         <span class="cart-count" id="cartCount">0</span>
       </button>
+      <a href="#shop" class="btn btn-pill btn-pill-nav">이 시즌 보기</a>
     </nav>
   </div>
 
@@ -59,30 +60,58 @@
 <main id="top">
 
   <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-media">
-      <video class="hero-img" autoplay muted loop playsinline poster="images/hero-front.jpg" id="heroVideo">
-        <source src="images/hero-walk.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-content container">
-      <p class="eyebrow reveal">ATELIER BLANC — NO. 01</p>
-      <h1 class="hero-title reveal">
-        <span>화이트가 아니라,</span>
-        <span class="italic">정답이었다.</span>
+  <section class="hero-dawn" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-stage container">
+      <p class="hero-badge reveal">PREMIUM COTTON, DESIGNED FOR EVERYDAY</p>
+
+      <h1 class="hero-headline reveal">
+        <span>가볍게,</span>
+        <span>완벽하게.</span>
       </h1>
-      <p class="hero-sub reveal">
-        220gsm 헤비웨이트 코튼. 계산된 박시 핏. 개러먼트 다잉으로 완성한 은은한 톤 편차.
-        소량 생산, 핸드 피니시. 더 이상 화이트 티셔츠를 고민할 필요가 없도록.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#shop" class="btn btn-dark">더 티 구매하기</a>
-        <a href="#fabric" class="btn btn-ghost">원단 살펴보기</a>
+
+      <div class="hero-float" id="heroFloat">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <img src="images/product-studio.jpg" alt="더 에센셜 티, 공중에 떠 있는 제품 컷" class="hero-float-img" id="heroFloatImg">
+        <div class="hero-float-shadow" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-card hero-card-fabric reveal">
+        <p class="hero-card-label">원단 무게감</p>
+        <svg class="hero-card-chart" viewBox="0 0 220 70" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4,50 C40,10 70,60 100,30 C130,4 160,44 216,18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="100" cy="30" r="4.5" fill="currentColor"/>
+        </svg>
+        <div class="hero-card-scale">
+          <span>160gsm</span>
+          <span class="hero-card-scale-current">220gsm</span>
+          <span>280gsm</span>
+        </div>
+      </div>
+
+      <div class="hero-card hero-card-comfort reveal">
+        <p class="hero-card-label">컴포트 스코어</p>
+        <div class="hero-card-comfort-row">
+          <svg class="hero-card-ring" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="27" fill="none" stroke="currentColor" stroke-opacity="0.15" stroke-width="6"/>
+            <circle cx="32" cy="32" r="27" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-dasharray="169.6" stroke-dashoffset="17" transform="rotate(-90 32 32)"/>
+          </svg>
+          <span class="hero-card-value">98%</span>
+        </div>
+        <p class="hero-card-caption">하루 종일 입어도 편안하다는 응답</p>
       </div>
     </div>
-    <div class="hero-scroll" aria-hidden="true">
-      <span></span>
-      <p>SCROLL</p>
+
+    <div class="hero-bottom container">
+      <div class="hero-social reveal">
+        <span class="hero-avatar" aria-hidden="true"></span>
+        <span>1,204명이 이미 갈아탔습니다</span>
+      </div>
+      <div class="hero-dots" aria-hidden="true">
+        <span class="active"></span><span></span><span></span>
+      </div>
+      <a href="#shop" class="btn btn-pill reveal">더 에센셜 티 보기</a>
     </div>
   </section>
 

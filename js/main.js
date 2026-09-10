@@ -3,11 +3,43 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Respect reduced-motion for background videos ---------- */
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reducedMotion) {
     document.querySelectorAll('#heroVideo, #filmVideo').forEach(v => {
       v.removeAttribute('autoplay');
       v.pause();
     });
+  }
+
+  /* ---------- Hero floating product: mouse-tilt parallax ---------- */
+  const heroFloat = document.getElementById('heroFloat');
+  if (heroFloat && !reducedMotion && window.matchMedia('(hover: hover)').matches) {
+    const heroStage = document.querySelector('.hero-stage');
+    heroStage?.addEventListener('mousemove', (e) => {
+      const rect = heroFloat.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / rect.width;
+      const dy = (e.clientY - cy) / rect.height;
+      heroFloat.style.setProperty('--tilt-y', `${dx * 10}deg`);
+      heroFloat.style.transform = `translate(${dx * 10}px, ${dy * 6}px)`;
+    });
+    heroStage?.addEventListener('mouseleave', () => {
+      heroFloat.style.transform = '';
+      heroFloat.style.setProperty('--tilt-y', '0deg');
+    });
+  }
+
+  /* ---------- Hero dot indicator: reflects scroll progress ---------- */
+  const heroDots = document.querySelectorAll('.hero-dots span');
+  if (heroDots.length) {
+    const onHeroScroll = () => {
+      const progress = Math.min(1, window.scrollY / (window.innerHeight * 1.2));
+      const activeIndex = Math.min(heroDots.length - 1, Math.floor(progress * heroDots.length));
+      heroDots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
+    };
+    onHeroScroll();
+    window.addEventListener('scroll', onHeroScroll, { passive: true });
   }
 
   /* ---------- Header scroll state ---------- */
